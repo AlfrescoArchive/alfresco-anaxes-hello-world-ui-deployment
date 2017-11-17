@@ -25,6 +25,8 @@ target
 *.jar
 *.war
 *.ear
+*.zip
+/hello-ui-build
 
 # Kubernetes Helm
 requirements.lock
