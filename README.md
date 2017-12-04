@@ -6,7 +6,7 @@ The UI talks to the back-end service REST API to retrieve the welcome message to
 
 # Build Docker Image
 
-To build the Docker image run the script which gets the service jar:
+To build the Docker image run the script which gets the app distribution artifact:
 
     ./build-prep.sh
 
