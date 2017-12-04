@@ -16,9 +16,17 @@ then:
 
 # Run Docker Image
 
-To run the Docker image on port 8888:
+You first need to run the Hello World service host.  Assuming:
 
-    docker run -p8888:80 anaxes-hello-world-ui:latest
+    HELLO_BACKEND_URL=http://localhost:8080
+
+You can then run the UI Docker image on port 8888:
+
+    docker run -p8888:80 -e HELLO_BACKEND_URL=$HELLO_BACKEND_URL --name hello-world-ui anaxes-hello-world-ui:latest
+
+You should then be able to access the UI at:
+
+    http://localhost:8888
 
 # Helm
 
