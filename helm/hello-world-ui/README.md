@@ -15,6 +15,8 @@ An Ingress is used to rewrite the paths of the service and offer externally thro
 This chart depends on the following chart to provide ingress path rewrites:
 - Nginx Ingress - [https://github.com/kubernetes/charts/tree/master/stable/nginx-ingress](https://github.com/kubernetes/charts/tree/master/stable/nginx-ingress)
 
-You can deploy this chart to a minikube or AWS cluster with `helm install hello-world-app`
+You can deploy this chart to a minikube or AWS cluster with:
+
+    helm install hello-world-ui
 
 Once deployed you can use the `get-ui-url.sh` script to get the publicly accessible URL for the UI.
