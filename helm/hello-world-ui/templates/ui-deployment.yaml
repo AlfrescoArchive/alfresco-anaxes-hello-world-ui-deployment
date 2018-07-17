@@ -24,6 +24,12 @@ spec:
           env:
             - name: HELLO_BACKEND_URL
               value: {{ .Values.api.url }}
+            - name: ACS_URL
+              value: {{ .Values.sso.acs }}
+            - name: APS_URL
+              value: {{ .Values.sso.aps }}
+            - name: IDENTITY_SERVICE_URL
+              value: {{ .Values.sso.identityService }}
           ports:
             - containerPort: {{ .Values.image.internalPort }}
           livenessProbe:

@@ -37,7 +37,7 @@ See [helm/hello-world-ui](helm/hello-world-ui)
 To demonstrate the Single Sign On capability of the Hello World App you need to configure the URL to Alfresco Content Services, Alfresco Process Services and Alfresco Identity Service. If you are using the Docker Image you can set those up using the following environmental variables: ACS_URL, APS_URL, IDENTITY_SERVICE_URL.
 
 | Component   | Can be accessed at | Example of Usage |
-| ------------|:-----------: | ---------------------- |
+| ------------|:----------- | :---------------------- |
 | Alfresco Anaxes Hello World Service      | http://localhost:8080/hello/welcome     | -e HELLO_BACKEND_URL=http://localhost:8080 |
 | Alfresco Content Services  | https://localhost:8080/share      | -e ACS_URL=https://localhost:8080 |
 | Alfresco Process Services     | https://localhost:8080/activiti-app       | -e APS_URL=https://localhost:8080 |
