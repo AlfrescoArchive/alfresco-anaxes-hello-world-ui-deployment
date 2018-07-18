@@ -19,3 +19,7 @@ ingress:
 api:
   # These may need to be overridden when deploying
   url: /hello-service
+sso:
+  acs: "https://localhost:8080"
+  aps: "https://localhost:8080"
+  identityService: "https://localhost:8080"
