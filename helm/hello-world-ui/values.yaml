@@ -11,7 +11,7 @@ image:
   internalPort: 80
 service:
   name: hello-world-app-ui
-  # If running on AWS choose LoadBalancer as service Type
+  # If running on AWS choose LoadBalancer as service Type, for minikube use NodePort
   type: NodePort
   externalPort: 80
 ingress:
