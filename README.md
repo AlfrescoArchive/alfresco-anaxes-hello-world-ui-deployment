@@ -18,7 +18,7 @@ then:
 
 You first need to run the Hello World service host.  Assuming:
 
-    HELLO_BACKEND_URL=http://localhost:8080
+    HELLO_BACKEND_URL=http://localhost/hello-service
 
 You can then run the UI Docker image on port 8888:
 
@@ -38,7 +38,7 @@ To demonstrate the Single Sign On capability of the Hello World App you need to 
 
 | Component   | Can be accessed at | Example of Usage |
 | ------------|:----------- | :---------------------- |
-| Alfresco Anaxes Hello World Service      | http://localhost:8080/hello/welcome     | -e HELLO_BACKEND_URL=http://localhost:8080 |
-| Alfresco Content Services  | https://localhost:8080/share      | -e ACS_URL=https://localhost:8080 |
-| Alfresco Process Services     | https://localhost:8080/activiti-app       | -e APS_URL=https://localhost:8080 |
-| Alfresco Identity Service        | https://localhost:8080/auth        | -e IDENTITY_SERVICE_URL=https://localhost:8080 |
+| Alfresco Anaxes Hello World Service      | http://localhost/hello-service/welcome     | -e HELLO_BACKEND_URL=http://localhost/hello-service |
+| Alfresco Content Services Repo | https://localhost/alfresco      | -e ACS_URL=https://localhost/alfresco |
+| Alfresco Process Services     | https://localhost/activiti-app       | -e APS_URL=https://localhost/activiti-app |
+| Alfresco Identity Service        | https://localhost/auth        | -e IDENTITY_SERVICE_URL=https://localhost/auth |

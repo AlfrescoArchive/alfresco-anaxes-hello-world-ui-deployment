@@ -18,8 +18,8 @@ ingress:
   path: /hello-ui
 api:
   # These may need to be overridden when deploying
-  url: /hello-service
+  url: "http://localhost/hello-service"
 sso:
-  acs: "https://localhost:8080"
-  aps: "https://localhost:8080"
-  identityService: "https://localhost:8080"
+  acs: "http://localhost/alfresco"
+  aps: "http://localhost/activiti-app"
+  identityService: "http://localhost/auth"
